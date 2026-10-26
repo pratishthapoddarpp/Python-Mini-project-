@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>{{ title }}</h2>
+{% if message %}<p class="success">{{ message }}</p>{% endif %}
+{% if error %}<p class="error">{{ error }}</p>{% endif %}
+<form method="POST">
+    <label>Enter Amount (Rs.)</label>
+    <input type="number" name="amount" min="1" required>
+    <button type="submit">{{ button }}</button>
+</form>
+<a class="btn grey" href="/menu">Back to Menu</a>
+{% endblock %}

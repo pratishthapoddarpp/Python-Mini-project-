@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Account Balance</h2>
+<p>{{ user.name }} ({{ acc }})</p>
+<div class="balance">Rs. {{ user.balance }}</div>
+<a class="btn grey" href="/menu">Back to Menu</a>
+{% endblock %}

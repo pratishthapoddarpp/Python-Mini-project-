@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Open New Account</h2>
+{% if message %}<p class="success">{{ message }}</p>{% endif %}
+{% if error %}<p class="error">{{ error }}</p>{% endif %}
+<form method="POST">
+    <label>Full Name</label>
+    <input type="text" name="name" required>
+    <label>Set 4-digit PIN</label>
+    <input type="password" name="pin" maxlength="4" required>
+    <label>Opening Balance (min Rs. 500)</label>
+    <input type="number" name="opening" min="500" required>
+    <button type="submit">Create Account</button>
+</form>
+<a class="btn grey" href="/">Back to Login</a>
+{% endblock %}

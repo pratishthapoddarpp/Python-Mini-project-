@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>🏧 Welcome to Bank ATM</h1>
+{% if error %}<p class="error">{{ error }}</p>{% endif %}
+<form method="POST">
+    <label>Account Number</label>
+    <input type="text" name="acc" required>
+    <label>4-digit PIN</label>
+    <input type="password" name="pin" maxlength="4" required>
+    <button type="submit">Login</button>
+</form>
+<a class="btn grey" href="/create">Open New Account</a>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Hello, {{ user.name }}</h1>
+<p class="small">Account No: {{ acc }}</p>
+<div class="grid">
+    <a class="btn" href="/balance">Check Balance</a>
+    <a class="btn" href="/deposit">Deposit</a>
+    <a class="btn" href="/withdraw">Withdraw</a>
+    <a class="btn" href="/transfer">Transfer</a>
+    <a class="btn" href="/statement">Mini Statement</a>
+    <a class="btn" href="/change_pin">Change PIN</a>
+</div>
+<a class="btn red" href="/logout">Logout</a>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Change PIN</h2>
+{% if message %}<p class="success">{{ message }}</p>{% endif %}
+{% if error %}<p class="error">{{ error }}</p>{% endif %}
+<form method="POST">
+    <label>Old PIN</label>
+    <input type="password" name="old_pin" maxlength="4" required>
+    <label>New PIN (4 digits)</label>
+    <input type="password" name="new_pin" maxlength="4" required>
+    <button type="submit">Change PIN</button>
+</form>
+<a class="btn grey" href="/menu">Back to Menu</a>
+{% endblock %}

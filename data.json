@@ -1,0 +1,89 @@
+{
+    "1001": {
+        "name": "Rahul Sharma",
+        "pin": "1234",
+        "balance": 26000,
+        "locked": true,
+        "transactions": [
+            {
+                "time": "15-10-2026 18:45",
+                "type": "Deposit",
+                "amount": 1000,
+                "balance": 26000
+            }
+        ]
+    },
+    "1002": {
+        "name": "Priya Patil",
+        "pin": "4321",
+        "balance": 40000,
+        "locked": false,
+        "transactions": []
+    },
+    "1003": {
+        "name": "Amit Verma",
+        "pin": "1111",
+        "balance": 8500,
+        "locked": false,
+        "transactions": []
+    },
+    "1004": {
+        "name": "Pratishtha Poddar",
+        "pin": "1611",
+        "balance": 4900,
+        "locked": false,
+        "transactions": [
+            {
+                "time": "17-10-2026 00:54",
+                "type": "Received from 1005",
+                "amount": 1000,
+                "balance": 2000
+            },
+            {
+                "time": "25-10-2026 12:28",
+                "type": "Deposit",
+                "amount": 3000,
+                "balance": 5000
+            },
+            {
+                "time": "25-10-2026 12:29",
+                "type": "Sent to 1005",
+                "amount": 100,
+                "balance": 4900
+            }
+        ]
+    },
+    "1005": {
+        "name": "Piyush",
+        "pin": "2000",
+        "balance": 1100,
+        "locked": false,
+        "transactions": [
+            {
+                "time": "17-10-2026 00:53",
+                "type": "Withdraw",
+                "amount": 500,
+                "balance": 2000
+            },
+            {
+                "time": "17-10-2026 00:54",
+                "type": "Sent to 1004",
+                "amount": 1000,
+                "balance": 1000
+            },
+            {
+                "time": "25-10-2026 12:29",
+                "type": "Received from 1004",
+                "amount": 100,
+                "balance": 1100
+            }
+        ]
+    },
+    "1006": {
+        "name": "Divyansh",
+        "pin": "0610",
+        "balance": 3000,
+        "locked": false,
+        "transactions": []
+    }
+}

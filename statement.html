@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Mini Statement</h2>
+<p class="small">{{ user.name }} - last 5 transactions</p>
+{% if history %}
+<table>
+    <tr><th>Date</th><th>Type</th><th>Amount</th><th>Balance</th></tr>
+    {% for t in history %}
+    <tr><td>{{ t.time }}</td><td>{{ t.type }}</td><td>{{ t.amount }}</td><td>{{ t.balance }}</td></tr>
+    {% endfor %}
+</table>
+{% else %}
+<p>No transactions yet.</p>
+{% endif %}
+<br>
+<a class="btn grey" href="/menu">Back to Menu</a>
+{% endblock %}
